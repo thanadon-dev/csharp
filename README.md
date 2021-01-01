@@ -22,8 +22,18 @@ GET
 ```
 Save to .txt
 ```c#
- using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\66971\Desktop\Menu FacebookAuto\FacebookAuto\FacebookAuto\bin\Debug\group.txt"))
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\66971\Desktop\Menu FacebookAuto\FacebookAuto\FacebookAuto\bin\Debug\group.txt"))
                         {
                             file.WriteLine("fds");
                         }
 ```
+Get ReadText .txt
+```c#
+                string pathComment = @"C:\Users\66971\Desktop\Menu FacebookAuto\FacebookAuto\FacebookAuto\bin\Debug\FBComment.txt";
+                    string[] readText = File.ReadAllLines(pathComment);
+                    foreach (string CommentFB in readText)
+                    {
+                        Console.WriteLine(CommentFB);
+                    }
+                    
+                    ```
