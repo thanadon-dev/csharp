@@ -1,6 +1,3 @@
-# csharp
-` ฝึกเขียน C# API ต่างๆ แปะไว้กันลืม
-
 # WebClient
 ```c#
         using (var wb = new WebClient())
