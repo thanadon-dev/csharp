@@ -1,4 +1,5 @@
-# WebClient
+# WebClient 
+POST
 ```c#
         using (var wb = new WebClient())
             {
@@ -10,5 +11,12 @@
                 string responseInString = Encoding.UTF8.GetString(response);
                 Console.WriteLine("Post : Successfuly");
                 Console.ReadLine();
+            }
+```
+GET
+```
+        using (var wb = new WebClient())
+            {
+                var response = wb.DownloadString(url);
             }
 ```
