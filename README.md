@@ -20,3 +20,10 @@ GET
                 var response = wb.DownloadString(url);
             }
 ```
+Save to .txt
+```c#
+ using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\66971\Desktop\Menu FacebookAuto\FacebookAuto\FacebookAuto\bin\Debug\group.txt"))
+                        {
+                            file.WriteLine("fds");
+                        }
+```
