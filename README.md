@@ -14,7 +14,7 @@ POST
             }
 ```
 GET
-```
+```c#
         using (var wb = new WebClient())
             {
                 var response = wb.DownloadString(url);
